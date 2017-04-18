@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--保证兼容性。告知IE使用最新的引擎渲染网页，chrome=1可激活chrome frame-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="WangHanmo">
+    <meta name="description" content="GO Chatting | A chatting program based on
+the website">
+    <!--移动设备上使用，宽度大小和初始缩放比例-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Go Chatting</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="banner">
+            <h1>Go Chatting!</h1>
+            <span id="status"></span>
+        </div>
+        <div id="historyMsg"></div>
+        <div class="controls">
+            <div class="items">
+                <input id="colorStyle" type="color" placeholder="#000" title="font color"/>
+                <input id="emoji" type="button" value="emoji" title="emoji"/>
+                <label for="sendImage" class="imageLable">
+                    <input type="button" value="image"/>
+                    <input id="sendImage" type="file" value="image"/>
+                </label>
+                <input id="clearBtn" type="button" value="clear" title="clear screen"/>
+            </div>
+            <textarea id="messageInput" placeholder="enter to send"></textarea>
+            <input id="sendBtn" type="button" value="SEND">
+            <div id="emojiWrapper"></div>
+        </div>
+    </div>
+    <div id="loginWrapper">
+        <p id="info">connecting to sever... Please wait :)</p>
+        <div id="nickWrapper">
+            <input type="text" placeholder="nickname" id="nicknameInput"/>
+            <input type="button" value="OK" id="loginBtn"/>
+        </div>
+    </div>
+    <footer>
+        <small>WHM | whmink@foxmail.com</small>
+    </footer>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="scripts/go_chatting.js"></script>
+</body>
+</html>

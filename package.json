@@ -1,0 +1,17 @@
+{
+    "name": "WangHanmo",
+    "description": "A realtime chat web application",
+    "version": "0.3.8",
+    "main": "server.js",
+    "script": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "4.15.x",
+        "socket.io": "1.7.x"
+    },
+    "engines": {
+        "node": "6.10.x",
+        "npm": "2.15.x"
+    }
+}

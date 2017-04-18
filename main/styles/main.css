@@ -1,0 +1,116 @@
+/*custome the main window*/
+html, body {
+    margin: 0;
+    background-color: lightcyan;
+    font-family: Arial, sans-serif;
+    background-image: url(../content/images/星空.gif);
+    background-size: cover;
+}
+.wrapper {
+    border-color: #aaaaaa;
+    border-width: 1px;
+    border-style: outset;
+    border-radius: 10px;
+    width: 750px;
+    height: 680px;
+    padding: 8px;
+    margin: 10px auto;
+    background-color: #aaaaaa;
+}
+#loginWrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(5,5,5,.6);
+    text-align:  center;
+    color: #ffffff;
+    display: block;
+    padding-top: 200px;
+}
+#nickWrapper {
+    display: none;
+}
+.banner {
+    height: 80px;
+    width: 100%;
+}
+.banner p {
+    float: left;
+    display: inline-block;
+}
+.controls {
+    height: 100px;
+    margin: 5px 0px;
+    position: relative;
+}
+#historyMsg {
+    height: 400px;
+    background-color:  #ffffff;
+    overflow: auto;
+    padding: 2px;
+}
+#historyMsg img {
+    max-width: 99%;
+}
+.timespan {
+    color: #dddddd;
+}
+.items {
+    height: 30px;
+}
+#colorStyle {
+    width: 40px;
+    border: none;
+    padding: 0;
+}
+
+/*custome the file input*/
+.imageLable {
+    position: relative;
+}
+#sendImage {
+    position: absolute;
+    width: 52px;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+/*It is the end of customing the file input*/
+
+#messageInput {
+    width: 440px;
+    max-width: 440px;
+    height: 90px;
+    max-height: 90px;
+}
+#sendBtn {
+    width: 100px;
+    height: 66px;
+    float: right;
+}
+#emojiWrapper {
+    display: none;
+    width: 500px;
+    bottom: 105px;
+    position: absolute;
+    background-color: #aaaaaa;
+    box-shadow: 0 0 10px #555;
+}
+#emojiWrapper img {
+    margin: 2px;
+    padding: 2px;
+    width: 25px;
+    height: 25px;
+}
+#emojiWrapper img:hover {
+    background-color:  blue;
+}
+.emoji {
+    display: inline;
+}
+footer {
+    text-align: center;
+    color: white;
+}
