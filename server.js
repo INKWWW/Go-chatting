@@ -32,7 +32,7 @@ io.on('connection', function (socket) {  //此处socket表示当前连接到服�
     });
 
     //用户离开
-    socket.on('disconnext', function () {
+    socket.on('disconnct', function () {
         users.splice(socket.userIndex, 1);
         socket.broadcast.emit('system', socket.nickname, users.length, 'logout');
     });
