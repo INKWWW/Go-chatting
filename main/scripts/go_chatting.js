@@ -36,7 +36,7 @@ Go_Chatting.prototype = {
         });
         this.socket.on('system', function(nickName, userCount, type) {
             //判断用户连接与否并显示通知
-            var msg = nickName + (type == 'login' ? ' joined' : 'left');
+            var msg = nickName + (type == 'login' ? ' joined' : ' left');
             //指定系统消息显示为红色
             that._displayNewMsg('system', msg, 'red');
             document.getElementById('status').textContent = userCount + (userCount > 1 ? ' users' : ' user') + ' online';
