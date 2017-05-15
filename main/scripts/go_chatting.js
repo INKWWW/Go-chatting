@@ -110,6 +110,11 @@ Go_Chatting.prototype = {
                     this.value = '';
                     return;
                 }
+                
+            if (!/image\/\w+/.test(file.type)){
+                    alert("please choose images :)");
+                    return false;
+                }
                 reader.onload = function(e) {
                     //读取成功就显示页面并发送到服务器
                     this.value = '';
