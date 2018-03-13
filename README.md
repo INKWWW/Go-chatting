@@ -3,7 +3,7 @@
 ## A realtime web chatting app
 https://gogochatting.herokuapp.com
 
-Provide fundamental functions for chatting!
+Provide fundamental chatting functions!
 
 ## Test
 Test on Chrome\Safari\Edge\Firefox.
